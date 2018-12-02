@@ -16,6 +16,10 @@ public class Pruebas {
         static BufferedReader br= new BufferedReader (new InputStreamReader (System.in));
         static BufferedWriter wr= new BufferedWriter (new OutputStreamWriter(System.out));
     public static void main(String[] args) throws IOException {
+	    
+	    //Aqui debo poner una string, a esa String le voy a dar un split primero por saltos de lineas(va a un array) para clasificar 
+	    //cada tweet, depues hare otro split por el caracter especial si lo almacenare en un array en este caso seria tweet en la 
+	    //posicion 0= ustuarios, posicion 1=tweet,posicion 2=fecha,posicion 3=ubicacion
         String tweet[]={"@lol","#esto @gg #la ...... @gg aoiq aiqnw #lol ioqn @oanq @gg #la ","fecha","ubicacion" };
         int hast[]=new int[5];
         String hast2[]=new String[5];
@@ -109,6 +113,9 @@ public class Pruebas {
         int x;
         String c2;
         int index;
+	    //otra forma para el top 10 o 20, recorre el array y compara c.equals(i o j), si existe una igualdad un contador aumentara en 1
+	    // en la condicion ademas pondre si el contador es igual a 0 cumple,el 4 debe ser remplazado por i del ciclo o un valor que 
+	    //tenga encuenta el tamaño del vector
         if(array[4]<a && !c.equals(array2[0]) &&!c.equals(array2[1]) &&!c.equals(array2[2]) &&!c.equals(array2[3]) &&!c.equals(array2[4])){
             array[4]=a;
             array2[4]=c;
