@@ -26,14 +26,14 @@ public class Acciones {
             int compra=0;
             int venta=0;
             
-            int[][] week= new int [n2][6];
+            int[] week= new int [6];
             for(int i=0;i<n2;i++){
                 wr.write("Valores de los 6 dias de la semana "+(i+1)+" Separados por espacios "+"\n");
                 wr.flush();
-                week[i]= leerconsola();
+                week= leerconsola();
                 
-                compra+=acciones(week[i],2);
-                venta+=acciones(week[i],1);
+                compra+=acciones(week,2);
+                venta+=acciones(week,1);
                 
             }
             wr.write(" Total ventas: "+venta);
@@ -85,7 +85,7 @@ public class Acciones {
         if(z==2){
             return vent;
         }
-        System.out.println(com+" y la venta es de "+vent+" : "+dif2);
+       // System.out.println(com+" y la venta es de "+vent+" : "+dif2);
         
         return dif2;
         
