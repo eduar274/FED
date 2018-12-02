@@ -28,6 +28,9 @@ public class Encr {
                         char c[]= modified.toCharArray();
                         bw.write("\n\n El corrimiento: ");
                         bw.flush();
+			// aqui debo hacer el contador de cada palabra (Num de caracteres=i)
+			// y del numero de palabra que contiene la frase=j
+			// funcion con dos ciclos for, el primero es frase,el segundo es palabra
                         String n=br.readLine();
 
                         bw.flush();
