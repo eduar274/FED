@@ -22,8 +22,14 @@ public class Calculadora {
            }
  
   public static int division(int a,int b){
-               int c = a / b;               // the variable a is divide in b and the answer be to stored in the variable c
+      if(b==0){
+          BufferedWriter wr=new BufferedWriter(new OutputStreamWriter(System.out));
+          wr.write("La division no es posible");
+          return b;
+      }else{
+      int c = a / b;               // the variable a is divide in b and the answer be to stored in the variable c
       return c;
+      }
            }
   
   public static int potencia(int a,int b){
